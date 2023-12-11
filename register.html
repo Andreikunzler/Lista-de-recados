@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Recados</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/styles.css">
+  <script src="../js/auth.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <img class="logo" src="./images/logo.svg" alt="">
+
+      <h1 class="title">Comece já!</h1>
+      <h2 class="subtitle">
+        Cadastre-se para receber recados
+      </h2>
+    </header>
+
+    <main>
+      <form id="form-login">
+        <div class="form-control">
+          <label for="user">Usuário</label>
+          <input type="text" id="user" placeholder="Insira o nome de usuário" required />
+        </div>
+        <div class="form-control">
+          <label for="password">Senha</label>
+          <input type="password" id="password" placeholder="Insira sua Senha" required/>
+        </div>
+
+        <button class="btn-submit" id="register">Cadastrar</button>
+        <a style="display:block; text-align: center; margin-top: 20px;" href="/login.html">Já tem conta? Fazer login.</a>
+      </form>
+    </main>
+  </div>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="./js/login.js"></script>
+</body>
+
+</html>
