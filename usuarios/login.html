@@ -29,23 +29,21 @@
     <main>
       <form id="form-new-message">
         <div class="form-control">
-          <label for="title">Título</label>
-          <input type="text" id="title" placeholder="Insira um título para o recado" />
+          <label for="user">Usuário</label>
+          <input type="text" id="user" placeholder="Insira o nome de usuário" />
         </div>
-
         <div class="form-control">
-          <label for="description">Descrição</label>
-          <textarea type="text" id="description" placeholder="Insira uma descrição para o recado"></textarea>
+          <label for="password">Senha</label>
+          <input type="password" id="password" placeholder="Insira sua Senha" />
         </div>
 
-        <button class="btn-submit">Cadastrar Recado</button>
-        <button class="btn-submit" type="reset">Resetar</button>
+        <button class="btn-submit" type="button" id="login">Login</button>
+        <button class="btn-submit" id="register">Cadastrar</button>
       </form>
     </main>
   </div>
 
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script src="../js/api.js"></script>
   <script src="../js/newMessage.js"></script>
   <script src="../js/scripts.js"></script>
 </body>
