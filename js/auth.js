@@ -1,11 +1,13 @@
-function redirect(url=null) {
+const HOST = location.host;
+
+function redirect(url = null) {
     switch (url) {
         case 'notes':
-            location.href = 'http://127.0.0.1:5501/recados/';
+            location.href = HOST + '/recados';
             break;
     
         default:
-            location.href = 'http://127.0.0.1:5501/login.html';
+            location.href = HOST + '/login.html';
             break;
     }
 }
@@ -16,11 +18,11 @@ function session(user) {
 
 function isLogged() {
     if (!sessionStorage.getItem('user')) {
-        if (location.href != 'http://127.0.0.1:5501/login.html' && location.href != 'http://127.0.0.1:5501/register.html') {
+        if (location.pathname != '/login.html' && location.pathname != '/register.html') {
             redirect('login');
         }
     } else {
-        if (!location.href.includes('recados')) {
+        if (!location.pathname.includes('recados')) {
             redirect('notes');
         }
     }
