@@ -31,11 +31,19 @@
       <form id="form-login">
         <div class="form-control">
           <label for="user">Usuário</label>
-          <input type="text" id="user" placeholder="Insira o nome de usuário" required />
+          <input type="text" id="user" placeholder="Insira o nome de usuário" required>
+        </div>
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Insira o email do usuário" required>
         </div>
         <div class="form-control">
           <label for="password">Senha</label>
-          <input type="password" id="password" placeholder="Insira sua Senha" required/>
+          <input type="password" id="password" placeholder="Insira sua Senha" required>
+        </div>
+        <div class="form-control">
+          <label for="image">Imagem de perfil</label>
+          <input type="text" id="image" placeholder="Insira a url da imagem de perfil" required>
         </div>
 
         <button class="btn-submit" id="register">Cadastrar</button>
@@ -45,6 +53,7 @@
   </div>
 
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="./js/api.js"></script>
   <script src="./js/login.js"></script>
 </body>
 
