@@ -1,13 +1,11 @@
-const HOST = location.host;
-
 function redirect(url = null) {
     switch (url) {
         case 'notes':
-            location.href = HOST + '/recados';
+            location.pathname = '/recados';
             break;
     
         default:
-            location.href = HOST + '/login.html';
+            location.pathname = '/login.html';
             break;
     }
 }
